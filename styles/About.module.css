@@ -15,19 +15,27 @@
     flex-direction: column;
     margin-bottom: 120px;
 }
-.food h2 {
+
+.carrot {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.food h2, .carrot h2 {
     font-weight: 400;
     font-size: 25px;
     letter-spacing: 2px;
 }
-.food span {
+.food span, .carrot span {
     font-weight: 300;
     font-size: 15px;
     color: #C6AD8F;
     padding-top: 20px;
     letter-spacing: 3px;
 }
-.food span:hover {
+.food span:hover, .carrot span:hover {
     cursor: pointer;
     color: #fff;
 }
@@ -100,4 +108,82 @@
     width: 340px;
     margin-bottom: 18px;
     height: 160px;
+}
+
+@media (min-width: 750px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .food {
+        flex: 50%;
+        width: 50%;
+        flex-basis: auto;
+    }
+
+    .carrot {
+        flex: 50%;
+        width: 50%;
+        flex-basis: auto;
+        align-self: flex-end;
+    }
+
+    .aboutContent {
+        max-width: 320px;
+        padding-right: 30px;
+    }
+
+    .contentContainer {
+        flex-direction: row;
+        margin-top: -120px;
+    }
+
+    .content {
+        margin: 10px;
+        width: 210px;
+        padding: 10px;
+    }
+
+    .aboutImg {
+        height: 282px;
+        width: 210px;
+    }
+}
+
+@media (min-width: 950px) {
+    .container {
+        flex-wrap: nowrap;
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+    .carrot {
+        align-self:auto;
+        align-items: flex-start;
+    }
+    .food {
+        align-items: flex-start;
+    }
+    .contentContainer{
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        padding-bottom: 100px;
+    }
+    .content {
+        margin: 5px;
+        
+        width: 300px;
+    }
+    .oj {
+        margin-top: -180px;
+    }
+    .pj {
+        margin-top: -100px;
+    }
+    .aboutImg {
+        width: 280px;
+        height: 350px;
+    }
 }

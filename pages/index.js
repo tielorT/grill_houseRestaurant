@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Intro from '../components/Intro'
 import About from '../components/About'
 import Welcome from '../components/Welcome'
+import Footer from '../components/Footer'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Intro />
       <About />
       <Welcome />
+      <Footer />
     </div>
   )
 }

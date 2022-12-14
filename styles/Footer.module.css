@@ -1,0 +1,32 @@
+.container {
+    background-color: #425664;
+    padding-top: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 39px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.content p {
+    color: #fff;
+    width: 300px;
+    text-align: center;
+    line-height: 1.6;
+
+}
+
+.content img {
+    color: #fff;
+    width: 104px;
+    height: 57px;
+}
